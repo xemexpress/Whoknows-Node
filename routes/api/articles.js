@@ -8,7 +8,7 @@ var auth = require('../auth')
 
 // Preload article
 router.param('article', function(req, res, next, slug){
-    Article.findOne({ title: slug })
+    Article.findOne({ slug: slug })
         .populate('author')
         .then(function(article){
             if(!article){ return res.sendStatus(404) }
