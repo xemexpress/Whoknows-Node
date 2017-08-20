@@ -21,7 +21,7 @@ var auth = {
         credentialsRequired: false,
         getToken: getTokenFromHeader
     }),
-    admin: ['testtest']
+    admin: ['whoknows']
 }
 
 module.exports = auth
